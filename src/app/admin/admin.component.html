@@ -1,0 +1,172 @@
+<div class="container " style="padding-top: 50px;">
+    
+    <select class="form-select" [(ngModel)]="operation"  aria-label="Default select example">
+
+        <option value="user">User Details</option>
+        <option value="slot">Slot Details</option>
+        <option value="bed">Bed Booking Details</option>
+        <option value="ambulance">Ambulance Booking Details</option>
+        <option value="5">Coming Soon</option>
+      </select>
+ 
+  </div>
+
+  <div class="container" *ngIf="operation=='user'">
+
+    <div class="container-fluid" style="padding-top: 40px;">
+
+        <table class="table table-bordered">
+            <thead style="background:linear-gradient(-135deg, #c850c0, #4158d0);">
+              <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Password</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr *ngFor="let s of user">
+                  <td>{{s.fname}}</td>
+                  <td>{{s.lname}}</td>
+                  <td>{{s.age}}</td>
+                  <td>{{s.email}}</td>
+                  <td>{{s.pno}}</td>
+                  <td>{{s.password}}</td>
+                    
+                </tr>
+            </tbody>
+          </table>
+          
+        
+    
+    </div>
+    
+  </div>
+  
+  <div class="container" *ngIf="operation=='slot'">
+
+    <div class="container-fluid" style="padding-top: 40px;">
+
+        <table class="table table-bordered">
+            <thead style="background:linear-gradient(-135deg, #c850c0, #4158d0);">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Aadhar Details</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Hospital</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">Postal Code</th>
+                <th scope="col">Admin Book Slot</th>
+                <th scope="col">User Arrived</th>
+                <th scope="col">Delete User</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr *ngFor="let s of vaccine">
+                  <td>{{s.name}}</td>
+                  <td>{{s.aadhar}}</td>
+                  <td>{{s.email}}</td>
+                  <td>{{s.pno}}</td>
+                  <td>{{s.hospital}}</td>
+                  <td>{{s.city}}</td>
+                  <td>{{s.state}}</td>
+                  <td>{{s.pincode}}</td>
+                  <td>
+                    <button class="btn btn-danger" >Book 1st Slot</button> |
+                    <button class="btn btn-danger" >Book 2st Slot</button>
+                </td>
+                <td>
+                  <button class="btn btn-danger" >Done 1st Slot</button> |
+                  <button class="btn btn-danger" >Done 2st Slot</button>
+              </td>
+                <td>
+                    <button class="btn btn-info" >Wrong Details Delete User</button>
+                </td>
+                    
+                </tr>
+            </tbody>
+          </table>
+          
+        
+    
+    </div>
+  </div>
+
+  <div class="container" *ngIf="operation=='bed'">
+
+    <div class="container-fluid" style="padding-top: 40px;">
+
+        <table class="table table-bordered">
+            <thead style="background:linear-gradient(-135deg, #c850c0, #4158d0);">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Bed Type</th>
+                <th scope="col">Book Date</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Hospiital </th>
+                <th scope="col">City</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr *ngFor="let s of bed">
+                  <td>{{s.name}}</td>
+                  <td>{{s.bedtype}}</td>
+                  <td>{{s.bookdate}}</td>
+                  <td>{{s.pno}}</td>
+                  <td>{{s.hospital}}</td>
+                  <td>{{s.city}}</td>
+                  <td>{{s.message}}</td>
+                    
+                </tr>
+            </tbody>
+          </table>
+          
+        
+    
+    </div>
+    
+  </div>
+  
+
+  <div class="container" *ngIf="operation=='ambulance'">
+
+    <div class="container-fluid" style="padding-top: 40px;">
+
+        <table class="table table-bordered">
+            <thead style="background:linear-gradient(-135deg, #c850c0, #4158d0);">
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Address</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">Zip</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr *ngFor="let s of ambulance">
+                  <td>{{s.name}}</td>
+                  <td>{{s.pno}}</td>
+                  <td>{{s.address}}</td>
+                  <td>{{s.city}}</td>
+                  <td>{{s.state}}</td>
+                  <td>{{s.zip}}</td>
+                    
+                </tr>
+            </tbody>
+          </table>
+          
+        
+    
+    </div>
+    
+  </div>
