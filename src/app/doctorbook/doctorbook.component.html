@@ -1,0 +1,223 @@
+<h1 style="text-align: center;">Choose your location, Book your Appointment</h1>
+
+
+<div style="background-image: url(assets/purple.jpg); background-repeat: no-repeat;background-size: cover;">
+  <div class="dropdown">
+    
+    <select [(ngModel)]="city" class="select-css">
+      <option>Delhi</option>
+      <option>Chennai</option>
+      <option>Pune</option>
+      <option>Mumbai</option>
+    </select>
+  </div>
+
+<div class="container">
+    <div class="row" *ngIf="city=='Delhi'">
+        <div class="col-sm-4"  >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Stephcurry">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Delhi A</h5>
+                  <p class="card-text">Stephen Curry is a heart suregeon, Who is experienced over 25 years. He is from Pune.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4" >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Elenasmith">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Delhi B</h5>
+                  <p class="card-text">Elena Smith is a Dentist,Who is experienced over 10 years. She is from Chennai.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Pepper">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Delhi C</h5>
+                  <p class="card-text">Pepper Potts is a physician, Who is experienced over 25 years.She is from Delhi.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="city=='Chennai'">
+        <div class="col-sm-4"  >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Stephcurry">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Chennai A</h5>
+                  <p class="card-text">Stephen Curry is a heart suregeon, Who is experienced over 25 years. He is from Pune.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4" >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Elenasmith">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Chennai B</h5>
+                  <p class="card-text">Elena Smith is a Dentist,Who is experienced over 10 years. She is from Chennai.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Pepper">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Chennai C</h5>
+                  <p class="card-text">Pepper Potts is a physician, Who is experienced over 25 years.She is from Delhi.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="city=='Pune'">
+        <div class="col-sm-4"  >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Stephcurry">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Pune A</h5>
+                  <p class="card-text">Stephen Curry is a heart suregeon, Who is experienced over 25 years. He is from Pune.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4" >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Elenasmith">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Pune B</h5>
+                  <p class="card-text">Elena Smith is a Dentist,Who is experienced over 10 years. She is from Chennai.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Pepper">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Pune C</h5>
+                  <p class="card-text">Pepper Potts is a physician, Who is experienced over 25 years.She is from Delhi.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="city=='Mumbai'">
+        <div class="col-sm-4"  >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Stephcurry">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Stephen Curry</h5>
+                  <p class="card-text">Stephen Curry is a heart suregeon, Who is experienced over 25 years. He is from Pune.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4" >
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Elenasmith">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Elena Smith</h5>
+                  <p class="card-text">Elena Smith is a Dentist,Who is experienced over 10 years. She is from Chennai.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 20rem; margin-top: 30px;">
+                <img src="assets/doctor.jpg" class="card-img-top" alt="Pepper">
+                <div class="card-body">
+                  <h5 class="card-title">Dr Pepper Potts</h5>
+                  <p class="card-text">Pepper Potts is a physician, Who is experienced over 25 years.She is from Delhi.</p>
+                  <a (click)="onClick()" class="btn btn-primary">Book Appointment</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+  
+  
+  <!--<div class="dropdown">
+    <button style= "background:linear-gradient(-135deg, #c850c0, #4158d0); width: 25rem; margin-left: 750px; margin-top: 25px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Select Your Location
+    </button>
+    <ul style="width: 25rem;margin-left: 750px;"class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Mumbai</a></li>
+      <li><a class="dropdown-item" href="#">Chennai</a></li>
+      <li><a class="dropdown-item" href="#">Pune</a></li>
+      <li><a class="dropdown-item" href="#">Delhi</a></li>
+      <li><a class="dropdown-item" href="#">Bangalore</a></li>
+    </ul>
+  </div>!-->
+    
+     <div style="display:flex;">
+  
+  
+  
+      <div style="margin-left:150px; margin-top:160px;display: inline;" class="wordcontrol">
+        <h1 style="color:#4158d0;"><font size=12>Safety of your data is our top priority.</font><br><br></h1>
+        <h6 style="color:whitesmoke;"><font size=5>✅Multi-level security checks<br><br>
+          ✅Multiple data backups<br><br>
+          ✅Stringent data privacy policies</font></h6>
+        </div>
+        <div style="margin-top:1px; margin-left: 150px; display: inline;" class="datacntrl" >
+      
+        <img style="margin-left: 50px; margin-top: 80px;" src="assets/datasec.jpg">
+       
+       
+      </div>
+  
+    </div>
+    
+    
+  <div style="margin-left: 150px; margin-top: 10px;" class="contntss">
+    <h2 style="color:#4158d0;"> Instant Appointment to the best Doctors</h2>
+    <font size=5><li style="color: white;">24x7 Support</li>
+    <li style="color: white;">Best doctors around you</li>
+    <li style="color: white;">25M+ Patients/year</li></font><br>
+    <div style="margin-top: 25px;" class="review">
+     <font size=5><h3 style="color:#4158d0;">People Say that:</h3></font>
+    </div>
+   
+    <div style ="width: 500px; margin-top:10px; border-radius: 10%;"id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner" style="text-align: center;">
+        <div class="carousel-item active">
+        <h5 style="color: white;">Rakesh</h5>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p style="color: white;">Covid care is an wonerful app that heped me alot during this pandemic! </p>
+        </div>
+        <div class="carousel-item">
+          <h5 style="color: white;">Sandeep</h5>
+          <p>⭐⭐⭐⭐⭐</p>
+        <p style="color: white;"> The best part of the app is the usability and the design! Kudos to the the entire Covid care team! Good job guys!I love this app so much it really helped alot. lorem ipsum A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete  </p>
+        </div>
+        <div class="carousel-item">
+          <h5 style="color: white;">Rupa</h5>
+          <p>⭐⭐⭐⭐</p>
+          <p style="color: white;">Everything is very great here! The customer service is wonderful</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  </div>
+  
+    
+ 
+  

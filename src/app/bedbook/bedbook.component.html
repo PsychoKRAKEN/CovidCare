@@ -1,0 +1,133 @@
+
+  <section class="page-title bg-1">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block text-center">
+                <span class="text-white">Book your Seat</span>
+                <h1 class="text-capitalize mb-5 text-lg">Appoinment</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="appoinment section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+                <div class="mt-3">
+                  <div class="feature-icon mb-3">
+                    <i class="icofont-support text-lg"></i>
+                  </div>
+                   <h2 class="text-color mt-3">Call for an Emergency Service!</h2>
+                    <h2 class="text-color mt-3">+84 789 1256 </h2>
+                </div>
+            </div>
+      
+            <div class="col-lg-8">
+                 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
+                  <h2 class="mb-2 title-color">Book For Bed</h2>
+                  <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+                     <form class="appoinment-form" (ngSubmit)="createBed()">
+                          <div class="row" >
+                               <div class="col-lg-6">
+                                  <div class="form-group" >
+                                    <select class=" select-css"  name="city" [(ngModel)]="bed.city" >
+                                          <option value="Bangalore">Bangalore</option>
+                                          <option value="Patna">Patna</option>
+                                          <option value="Chennai">Chennai</option>
+                                          <option value="Hyderabad">Hyderabad</option>
+                                          <option value="Jaipur">Jaipur</option>
+                                          <option value="Kolkata">Kolkata</option>
+                                          <option value="Ahmedabad">Ahmedabad</option>
+                                          <option value="Surat">Surat</option>
+                                          <option value="Bhopal">Bhopal</option>
+                                          <option value="Lucknow">Lucknow</option>
+                                          <option value="Indore">Indore</option>
+                                          <option value="Pune">Pune</option>
+                                          </select>
+                                      
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <select class=" select-css"  name="hospital" [(ngModel)]="bed.hospital" id="exampleFormControlSelect2">
+                                        <option>Select Hospital</option>
+                                        <option value="Fortis">Fortis</option>
+                                        <option value="IGMS">IGMS</option>
+                                        <option value="Kauvery">Kauvery</option>
+                                        <option value="Baptist">Baptist</option>
+                                        <option value="Narayna Multispeciality">Narayna Multispeciality</option>
+                                        <option value="AMRI">AMRI</option>
+                                        <option value="Lilavati">Lilavati</option>
+                                        <option value="Sir Ganga Ram">Sir Ganga Ram</option>
+                                        <option value="Apollo">Apollo</option>
+                                        <option value="Manipal">Manipal</option>
+                                        <option value="Yashoda Hospital ">Yashoda Hospital</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="form-group">
+                                    <select class=" select-css"  name="bedtype" [(ngModel)]="bed.bedtype" id="exampleFormControlSelect2">
+                                      <option>Bed Type</option>
+                                      <option value="General Bed">Genneral Beds</option>
+                                      <option value="Oxygen Beds">Oxygen Beds</option>
+                                      <option value="ICU Bed Without Ventilator">ICU bed without Ventilator</option>
+                                      <option value="ICU Bed With Ventilator">ICU Bed with Ventilator</option>
+                                    </select>
+                                </div>
+                            </div>
+                               <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <input name="date" id="date" [(ngModel)]="bed.bookdate" type="text" class="form-control" placeholder="dd/mm/yyyy" required>
+                                      <!--<div *ngIf="date.invalid && (date.dirty || date.touched)"class="alert alert-danger">
+
+                                       <div *ngIf="date.errors.required">
+                                          Date is required.
+                                       </div>
+                                       </div>-->
+                                  </div>
+                              </div>
+                               <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <input name="name" id="name" type="text" [(ngModel)]="bed.name" class="form-control" placeholder="Full Name" required>
+                                      <!--<div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+
+                                      <div *ngIf="name.errors.required">
+                                       Name is required.
+                                       </div>
+                                       </div>-->
+                                  </div>
+                              </div>
+      
+                              <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <input name="phone" id="phone" type="text" [(ngModel)]="bed.pno" class="form-control" placeholder="Phone Number" required>
+                                      <!--<div *ngIf="phone.invalid && (name.dirty || phone.touched)"class="alert alert-danger">
+
+                                      <div *ngIf="phone.errors.required">
+                                       Phone is required.
+                                       </div>
+                                       </div>-->
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-group-2 mb-4">
+
+                            <input name="message" id="message" [(ngModel)]="bed.message" class="form-control" rows="6" placeholder="Your Message" type="text">
+                              
+                          </div>
+
+                          <div class="field">
+                            <input class="btn btn-main btn-round-full" type="submit" value="Submit">
+                          </div>
+                      </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+
