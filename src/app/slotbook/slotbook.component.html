@@ -1,0 +1,121 @@
+<div id="mainid">
+
+    <div class="wrapper">
+    
+          <div class="title">SLOT BOOKING</div>
+          <form (ngSubmit)="createVaccine()">
+            <div class="field">
+              <input type="text" [(ngModel)]="vaccine.name" name=t1  required>
+              <label>Name</label>
+            </div>
+            <div class="field">
+                <input ng-maxlength="12" type="text" [(ngModel)]="vaccine.aadhar" name="t3" required>
+                <label>AADHAR NUMBER</label>
+              </div>
+            <div class="field">
+              <input type="text" [(ngModel)]="vaccine.email" name="t4" required>
+              <label>Email</label>
+            </div>
+            <div class="field">
+                <input type="text" [(ngModel)]="vaccine.pno" name="pno" required>
+                <label>Phone Number</label>
+              </div>
+              <div class="field">
+                <input type="text" [(ngModel)]="vaccine.hospital" name="t2" required>
+                <label>Nearest Hospital</label>
+              </div>
+            <div class="field">
+              <input type="text" [(ngModel)]="vaccine.city" name="t5" required>
+              <label>CITY</label>
+            </div>
+            
+            <div class="field">
+                <input type="text" [(ngModel)]="vaccine.state" name="t6" required>
+                <label>STATE</label>
+              </div>
+            
+            <div class="field">
+              <input type="number" [(ngModel)]="vaccine.pincode" name="t7" required>
+              <label>POSTAL CODE</label>
+            </div>
+         
+            
+            
+            
+           <br>
+              
+            <div class="field">
+              <input type="submit" value="BOOK SLOT">
+            </div>
+          
+    
+        </form>
+      </div>
+    </div>
+    
+    
+    
+  
+   
+
+
+
+<!--
+
+    
+            <div class="field">
+              <input type="text" [(ngModel)]="user.lname" name="t2" required>
+              <label>Last Name</label>
+            </div>
+<div class="mt-3 container-fluid">
+    <form (ngSubmit)="createVaccine()">
+        <div class="mb-3">
+            <label for="name11" class="form-label">Name</label>
+            <input type="text"  class="form-control"   [(ngModel)]="vaccine.name">
+        </div>
+
+        <div class="mb-3">
+            <label for="aadhar1" class="form-label">Aadhar Card Number</label>
+            <input type="number" class="form-control" name=t1 [(ngModel)]="vaccine.aadhar">
+            <div id="emailHelp" class="form-text">We'll never share your Aadhar Card Number with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="name11" class="form-label">Email</label>
+            <input type="text" name=t2 [(ngModel)]="vaccine.email" class="form-control" id="email" >
+        </div>
+
+        <div class="mb-3">
+            <label for="name11" class="form-label">Phone Number</label>
+            <input type="text" name=t3 [(ngModel)]="vaccine.pno" class="form-control" id="pno" >
+        </div>
+
+
+
+        <div class="col-12 mb-3">
+            <label for="inputAddress" class="form-label">Nearest Hospital</label>
+            <input type="text" name=t4 [(ngModel)]="vaccine.hospital" class="form-control" id="inputAddress" >
+        </div>
+        <div class="col-12 mb-3">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" name=t5 [(ngModel)]="vaccine.city" class="form-control" id="inputCity" >
+        </div>
+        <div class="col-12 mb-3">
+            <label for="inputstate" class="form-label">State</label>
+            <input type="text" name=t6 [(ngModel)]="vaccine.state" class="form-control" id="inputCity" >
+        </div>
+        
+        <div class="col-12 mb-3">
+            <label for="inputZip" class="form-label">Postal Code</label>
+            <input type="text" name=t7 [(ngModel)]="vaccine.pincode" class="form-control" id="inputZip">
+        </div>
+        
+        <div class="field">
+            <input type="submit" value="SignUp">
+          </div>
+
+
+    </form>
+</div>
+
+-->
